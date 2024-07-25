@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{571E8C7B-6B07-48F1-B071-C0D951C2D28C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinBookStationaryStock19</RootNamespace>
+    <AssemblyName>WinBookStationaryStock19</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormItemAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormItemAddEdit.Designer.cs">
+      <DependentUpon>FormItemAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSale.Designer.cs">
+      <DependentUpon>FormSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupplierOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupplierOrder.Designer.cs">
+      <DependentUpon>FormSupplierOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupplierAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupplierAddEdit.Designer.cs">
+      <DependentUpon>FormSupplierAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormItemSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormItemSearch.Designer.cs">
+      <DependentUpon>FormItemSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSaleSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaleSearch.Designer.cs">
+      <DependentUpon>FormSaleSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupplierOrderSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupplierOrderSearch.Designer.cs">
+      <DependentUpon>FormSupplierOrderSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupplierSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupplierSearch.Designer.cs">
+      <DependentUpon>FormSupplierSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMDI.Designer.cs">
+      <DependentUpon>FormMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryAddEdit.Designer.cs">
+      <DependentUpon>FormCategoryAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerAddEdit.Designer.cs">
+      <DependentUpon>FormCustomerAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserAddEdit.Designer.cs">
+      <DependentUpon>FormUserAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShopDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShopDetails.Designer.cs">
+      <DependentUpon>FormShopDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategorySearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategorySearch.Designer.cs">
+      <DependentUpon>FormCategorySearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerSearch.Designer.cs">
+      <DependentUpon>FormCustomerSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserSearch.Designer.cs">
+      <DependentUpon>FormUserSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyClasses\DALSaleDetails.cs" />
+    <Compile Include="MyClasses\DALSales.cs" />
+    <Compile Include="MyClasses\DALShopDetails.cs" />
+    <Compile Include="MyClasses\DALSupplierOrderDetails.cs" />
+    <Compile Include="MyClasses\DBCategory.cs" />
+    <Compile Include="MyClasses\DBCustomer.cs" />
+    <Compile Include="MyClasses\DALCategories.cs" />
+    <Compile Include="MyClasses\DALCustomers.cs" />
+    <Compile Include="MyClasses\DALItems.cs" />
+    <Compile Include="MyClasses\DALSupplierOrders.cs" />
+    <Compile Include="MyClasses\DALSuppliers.cs" />
+    <Compile Include="MyClasses\DALUsers.cs" />
+    <Compile Include="MyClasses\DatabaseConnection.cs" />
+    <Compile Include="MyClasses\DBItem.cs" />
+    <Compile Include="MyClasses\DBItemStock.cs" />
+    <Compile Include="MyClasses\DBSale.cs" />
+    <Compile Include="MyClasses\DBSaleDetail.cs" />
+    <Compile Include="MyClasses\DBSupplier.cs" />
+    <Compile Include="MyClasses\DBSupplierOrder.cs" />
+    <Compile Include="MyClasses\DBSupplierOrderDetail.cs" />
+    <Compile Include="MyClasses\DBUser.cs" />
+    <Compile Include="MyClasses\MyConnectioString.cs" />
+    <Compile Include="MyClasses\DBShopDetail.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CrystalReportBill.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportBill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReportCustomerList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCustomerList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReportMonthlySupplierOrder.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportMonthlySupplierOrder.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReportMonthlySale.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportMonthlySale.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReportProfit.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportProfit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReportStock.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportStock.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReportSupplierList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportSupplierList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DataSetBookStationaryDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetBookStationaryDB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FormReportBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FormReportBill.Designer.cs">
+      <DependentUpon>FormReportBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FormReportCustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FormReportCustomerList.Designer.cs">
+      <DependentUpon>FormReportCustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FormReportMonthlySale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FormReportMonthlySale.Designer.cs">
+      <DependentUpon>FormReportMonthlySale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FormReportMonthlySupplierOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FormReportMonthlySupplierOrder.Designer.cs">
+      <DependentUpon>FormReportMonthlySupplierOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FormReportProfit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FormReportProfit.Designer.cs">
+      <DependentUpon>FormReportProfit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FormReportStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FormReportStock.Designer.cs">
+      <DependentUpon>FormReportStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FormReportSupplierList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FormReportSupplierList.Designer.cs">
+      <DependentUpon>FormReportSupplierList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormItemAddEdit.resx">
+      <DependentUpon>FormItemAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSale.resx">
+      <DependentUpon>FormSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupplierOrder.resx">
+      <DependentUpon>FormSupplierOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupplierAddEdit.resx">
+      <DependentUpon>FormSupplierAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormItemSearch.resx">
+      <DependentUpon>FormItemSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSaleSearch.resx">
+      <DependentUpon>FormSaleSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupplierOrderSearch.resx">
+      <DependentUpon>FormSupplierOrderSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupplierSearch.resx">
+      <DependentUpon>FormSupplierSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMDI.resx">
+      <DependentUpon>FormMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryAddEdit.resx">
+      <DependentUpon>FormCategoryAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerAddEdit.resx">
+      <DependentUpon>FormCustomerAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserAddEdit.resx">
+      <DependentUpon>FormUserAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShopDetails.resx">
+      <DependentUpon>FormShopDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategorySearch.resx">
+      <DependentUpon>FormCategorySearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerSearch.resx">
+      <DependentUpon>FormCustomerSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserSearch.resx">
+      <DependentUpon>FormUserSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reports\CrystalReportBill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportBill.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReportCustomerList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCustomerList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReportMonthlySupplierOrder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportMonthlySupplierOrder.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReportMonthlySale.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportMonthlySale.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReportProfit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportProfit.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReportStock.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportStock.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReportSupplierList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportSupplierList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FormReportBill.resx">
+      <DependentUpon>FormReportBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FormReportCustomerList.resx">
+      <DependentUpon>FormReportCustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FormReportMonthlySale.resx">
+      <DependentUpon>FormReportMonthlySale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FormReportMonthlySupplierOrder.resx">
+      <DependentUpon>FormReportMonthlySupplierOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FormReportProfit.resx">
+      <DependentUpon>FormReportProfit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FormReportStock.resx">
+      <DependentUpon>FormReportStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FormReportSupplierList.resx">
+      <DependentUpon>FormReportSupplierList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reports\DataSetBookStationaryDB.xsc">
+      <DependentUpon>DataSetBookStationaryDB.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSetBookStationaryDB.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetBookStationaryDB.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\DataSetBookStationaryDB.xss">
+      <DependentUpon>DataSetBookStationaryDB.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
