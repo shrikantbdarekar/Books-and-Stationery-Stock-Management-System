@@ -24,11 +24,11 @@ namespace WinBookStationaryStock19
         private DALItems DALItemObj;
         private DALCustomers DALCustomerObj;
 
-        public FormSale(int OrderID)
+        public FormSale(int SaleID)
         {
             InitializeComponent();
 
-            this.SaleID = OrderID;
+            this.SaleID = SaleID;
 
             SaleObj = new Sale();
             DALSaleObj = new DALSales(MyConnectioString.Value);
