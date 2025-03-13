@@ -46,12 +46,6 @@ The **Books and Stationery Stock Management System** is a desktop application de
 - Generate sales reports for different time periods.
 - Generate reorder reports based on stock levels and reorder points.
 
-## Technology Stack
-- **Programming Language:** C#
-- **Database:** SQLite
-- **IDE:** Visual Studio 2019 Community
-- **Framework:** .NET Framework 4.7 or higher
-
 ## Database Design
 ### Tables
 - **Users**: Stores user login information and roles.
