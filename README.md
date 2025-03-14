@@ -73,14 +73,14 @@ The **Books and Stationery Stock Management System** will enable bookstore owner
 - Enhance customer satisfaction.
 - Improve overall operational efficiency.
 
-Apply For 
-## Online C# Project Workshop For College Students
+---
+# Apply For 
+
+### Online C# Project Workshop For College Students
 https://wa.me/p/8685551258164102/919765975757
 
-Apply For
-## Free Project Guidance For College Students
+### Free Project Guidance For College Students
 https://wa.me/p/7965729696887851/919765975757
 
-Apply For
-## Free Online Internship
+### Free Online Internship
 https://wa.me/p/8277870308947674/919765975757
